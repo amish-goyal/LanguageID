@@ -58,7 +58,7 @@ def createCharNgramModel(lang, docRange, ngramRange):
 
 	model = Vocab, totalCounts
 	string = base64.b64encode(bz2.compress(cPickle.dumps(model)))
-	with open(ROOTDIR+lang+'.model','w') as f:
+	with open(MODELDIR+lang+'.model','w') as f:
 		f.write(string)
 
 
