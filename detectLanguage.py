@@ -41,7 +41,7 @@ def getLangID(sentence):
 
 models = []
 for lang in LANG:
-	with open(ROOTDIR+lang+'.model') as filename:
+	with open(MODELDIR+lang+'.model') as filename:
 		string = filename.read()
 		model = cPickle.loads(bz2.decompress(base64.b64decode(string)))
 		models.append(model)
