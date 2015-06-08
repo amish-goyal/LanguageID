@@ -99,5 +99,5 @@ def generateDocs(lang, chunkSize, totalDocs):
 
 
 if __name__ == "__main__":
-	for lang in LANG:
+	for lang in NEW_LANGS:
 		generateDocs(lang,CHUNKSIZE,TOTALDOCS)

@@ -63,6 +63,6 @@ def createCharNgramModel(lang, docRange, ngramRange):
 
 
 if __name__ == "__main__":
-	for lang in LANG:
+	for lang in NEW_LANGS:
 		print "Creating Character N Gram Models for:\n"
 		createCharNgramModel(lang, INDEXRANGE,NGRAMRANGE)
